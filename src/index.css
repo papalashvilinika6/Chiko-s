@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Musco Origins';
+  src: url('/font/MUSCO%20ORIGINS.OTF') format('opentype');
+  font-display: swap;
+}
+
+:root {
+  font-family: 'Musco Origins', 'DM Sans', sans-serif;
+  font-size: 17px;
+  color: #ffffff;
+  background: #000000;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #000000;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #000000;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.location-button {
+  font-family: 'Musco Origins', 'DM Sans', sans-serif;
+}
+
+.location-action {
+  border: 1px solid rgba(244, 207, 118, 0.16);
+  background: rgba(0, 0, 0, 0.62);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  -webkit-backdrop-filter: blur(14px) saturate(120%);
+  backdrop-filter: blur(14px) saturate(120%);
+}
+
+.location-action:hover {
+  border-color: rgba(244, 207, 118, 0.48);
+  background: rgba(0, 0, 0, 0.82);
+}
+
+.location-action-icon {
+  color: #f4cf76;
+  transition: color 200ms ease;
+}
+
+.location-action:hover .location-action-icon {
+  color: #ffffff;
+}
+
+.glass-surface {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 18px 50px rgba(0, 0, 0, 0.18);
+  -webkit-backdrop-filter: blur(18px) saturate(125%);
+  backdrop-filter: blur(18px) saturate(125%);
+}
+
+.glass-surface-subtle {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.045);
+  -webkit-backdrop-filter: blur(14px) saturate(120%);
+  backdrop-filter: blur(14px) saturate(120%);
+}
+
+.glass-nav {
+  background: rgba(0, 0, 0, 0.72);
+  -webkit-backdrop-filter: blur(14px) saturate(120%);
+  backdrop-filter: blur(14px) saturate(120%);
+}
+
+.skeleton-shimmer {
+  background: linear-gradient(
+    110deg,
+    #242426 8%,
+    #3a3a3e 18%,
+    #242426 33%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.4s linear infinite;
+}
+
+@keyframes skeleton-shimmer {
+  to {
+    background-position: -200% 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skeleton-shimmer {
+    animation: none;
+  }
+}
+
+.brand-wordmark {
+  display: flex;
+  align-items: center;
+  width: clamp(10rem, 32vw, 18rem);
+  height: clamp(4rem, 10vw, 5.75rem);
+  overflow: hidden;
+}
+
+.brand-title {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 420px) {
+  .brand-wordmark {
+    width: 9rem;
+    height: 3.8rem;
+  }
+}
