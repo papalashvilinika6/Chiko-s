@@ -35,13 +35,13 @@ function BrandLockup() {
 
 const locations = [
   {
-    address: 'Petritsi 13D',
-    addressKa: 'პეტრიწის 13დ',
+    address: 'Ioane Petritsi 13D',
+    addressKa: 'იოანე პეტრიწის 13დ',
     mapUrl: 'https://www.google.com/maps/search/?api=1&query=Chikos%20Petritsi%2013D%20Tbilisi',
   },
   {
-    address: 'Kavtaradze 66A',
-    addressKa: 'კავთარაძის 66ა',
+    address: 'Petre Kavtaradze 66A',
+    addressKa: 'პეტრე ქავთარაძის 66ა',
     mapUrl: 'https://www.google.com/maps/search/?api=1&query=Chikos%20Kavtaradze%2066A%20Tbilisi',
   },
 ]
