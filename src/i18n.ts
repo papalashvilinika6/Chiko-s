@@ -14,8 +14,8 @@ export const uiText: Record<string, Record<Language, string>> = {
     ka: 'ფრეშ ინგრედიენტები, თამამი არომატი და თქვენი ჩიკოს ფავორიტები.',
   },
   slogan: {
-    en: 'Feel what we do and we do what we feel',
-    ka: 'იგრძენი ის, რასაც ვაკეთებთ, და ჩვენც ვაკეთებთ იმას, რასაც ვგრძნობთ',
+    en: 'Feel what we do and we do what we feel.',
+    ka: 'იგრძენი ის, რასაც ვაკეთებთ, და ჩვენც ვაკეთებთ იმას, რასაც ვგრძნობთ.',
   },
   all: { en: 'All', ka: 'ყველა' },
   burritos: { en: 'Burrito', ka: 'ბურიტო' },
